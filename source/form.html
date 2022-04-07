@@ -70,7 +70,7 @@
             <a class="header__popup-button" href="#">Авторизация</a>
 
             <!-- contacts start -->
-              <div class="interested__contacts contacts">
+              <div class="header__popup-contacts contacts">
                 <a class="contacts__link" href="tel:88005558628">
                   <!-- SVG - icon-phone -->
                   <span class="contacts__text">8 800 555-86-28</span>
@@ -164,13 +164,13 @@
                 <legend class="form__plan-title">Мои планы:</legend>
                 <ol class="form__plan-list">
                   <li class="form__plan-item">
-                    <h3 class="form__plan-subtitle">Франция, Италия</h3>
+                    <h2 class="form__plan-subtitle">Франция, Италия</h2>
                     <span class="form__plan-text">3 попутчика</span>
                     <span class="form__plan-text">26 мар — 29 мар</span>
                     <a class="form__plan-link" href="#">Изменить</a>
                   </li>
                   <li class="form__plan-item">
-                    <h3 class="form__plan-subtitle">Таиланд, Индонезия</h3>
+                    <h2 class="form__plan-subtitle">Таиланд, Индонезия</h2>
                     <span class="form__plan-text">1 попутчик</span>
                     <span class="form__plan-text">1 июл — 15 июл</span>
                     <a class="form__plan-link" href="#">Изменить</a>
@@ -205,7 +205,7 @@
                     <!-- form__add-control start -->
                       <div class="form__add-control">
                         <p class="form__add-control-block">
-                          <span class="form__add-control-text form__add-control-text--name">Ищу попутчиков:</span>
+                          <label class="form__add-control-text form__add-control-text--name">Ищу попутчиков:</label>
                           <span class="form__add-control-text form__add-control-text--unit">Чел.</span>
                         </p>
                         <div class="form__add-control-buttons">
@@ -222,7 +222,7 @@
                       </div>
                       <div class="form__add-control">
                         <p class="form__add-control-block">
-                          <span class="form__add-control-text form__add-control-text--name">Длительность:</span>
+                          <label class="form__add-control-text form__add-control-text--name">Длительность:</label>
                           <span class="form__add-control-text form__add-control-text--unit">Дн.</span>
                         </p>
                         <div class="form__add-control-buttons">
@@ -415,7 +415,7 @@
                       </div>
                     <!-- form__add-calendar end -->
 
-                    <button class="form__add-button" type="button">Следующий шаг</button>
+                    <a class="form__add-button" href="#">Следующий шаг</a>
                   </li>
                   <li class="form__add-item">
                     <span class="form__add-subtitle">Шаг 2. Маршрут</span>
@@ -1186,8 +1186,8 @@
                       </div>
                     <!-- form__add-route start -->
 
-                    <button class="form__add-button" type="button">Следующий шаг</button>
-                    <button class="form__add-button form__add-button--back" type="button">На шаг назад</button>
+                    <a class="form__add-button" href="#">Следующий шаг</a>
+                    <a class="form__add-button form__add-button--back" href="#">На шаг назад</a>
                   </li>
                   <li class="form__add-item">
                     <span class="form__add-subtitle">Шаг 3. Развлечения</span>
@@ -1198,7 +1198,7 @@
                         <li class="form__add-entertainment-item">
                           <label class="form__add-entertainment-label" for="entertainment-plan-1">Босния и Герцеговина</label>
                           <img class="form__add-entertainment-flag" src="img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг Боснии и Герцеговины.">
-                          <textarea class="entertainment__textarea" name="entertainment-plan-1" id="entertainment-plan-1" placeholder="План действий"></textarea>
+                          <textarea class="form__add-entertainment-textarea" name="entertainment-plan-1" id="entertainment-plan-1" placeholder="План действий"></textarea>
                         </li>
                         <li class="form__add-entertainment-item">
                           <label class="form__add-entertainment-label" for="entertainment-plan-2">Чехия</label>
@@ -1209,7 +1209,7 @@
                     <!-- form__add-entertainment end -->
 
                     <button class="form__add-button" type="submit">Отправить</button>
-                    <button class="form__add-button form__add-button--back" type="button">На шаг назад</button>
+                    <a class="form__add-button form__add-button--back" href="#">На шаг назад</a>
 
                   </li>
                 </ol>

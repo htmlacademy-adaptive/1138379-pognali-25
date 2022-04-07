@@ -70,7 +70,7 @@
             <a class="header__popup-button" href="#">Авторизация</a>
 
             <!-- contacts start -->
-              <div class="interested__contacts contacts">
+              <div class="header__popup-contacts contacts">
                 <a class="contacts__link" href="tel:88005558628">
                   <!-- SVG - icon-phone -->
                   <span class="contacts__text">8 800 555-86-28</span>
@@ -120,9 +120,7 @@
           <section class="filter">
             <div class="filter__block">
               <h2 class="filter__title">Фильтрация по странам:</h2>
-              <button class="filter__button-list" type="button">
-                <span class="visually-hidden">Показать список стран</span>
-              </button>
+              <a class="filter__button-list" href="#">Показать список стран</a>
             </div>
             <div class="filter__popup">
               <ul class="filter__list">
@@ -866,15 +864,15 @@
 
         <!-- option start -->
           <section class="option">
+            <h2 class="option__title">Подберите идеального попутчика</h2>
             <form class="option__form" action="https://echo.htmlacademy.ru" method="post">
-              <h2 class="option__title">Подберите идеального попутчика</h2>
               <fieldset class="option__fieldset">
-                <label class="option__label">
-                  <span class="option__label-text">Хобби</span>
-                  <button class="option__label-button" type="button">
+                <div class="option__block">
+                  <legend class="option__legend">Хобби</legend>
+                  <button class="option__button" type="button">
                     <span class="visually-hidden">Развернуть список.</span>
                   </button>
-                </label>
+                </div>
                 <ul class="option__list">
                   <li class="option__item">
                     <label class="option__control">
@@ -900,12 +898,12 @@
                 </ul>
               </fieldset>
               <fieldset class="option__fieldset">
-                <label class="option__label">
-                  <span class="option__label-text">Музыка</span>
-                  <button class="option__label-button" type="button">
+                <div class="option__block">
+                  <legend class="option__legend">Музыка</legend>
+                  <button class="option__button" type="button">
                     <span class="visually-hidden">Развернуть список.</span>
                   </button>
-                </label>
+                </div>
                 <ul class="option__list">
                   <li class="option__item">
                     <label class="option__control">
@@ -931,12 +929,12 @@
                 </ul>
               </fieldset>
               <fieldset class="option__fieldset">
-                <label class="option__label">
-                  <span class="option__label-text">Еда</span>
-                  <button class="option__label-button" type="button">
+                <div class="option__block">
+                  <legend class="option__legend">Еда</legend>
+                  <button class="option__button" type="button">
                     <span class="visually-hidden">Развернуть список.</span>
                   </button>
-                </label>
+                </div>
                 <ul class="option__list">
                   <li class="option__item">
                     <label class="option__control">
@@ -962,29 +960,29 @@
                 </ul>
               </fieldset>
               <fieldset class="option__fieldset">
-                <label class="option__label">
-                  <span class="option__label-text">Транспорт</span>
-                  <button class="option__label-button" type="button">
+                <div class="option__block">
+                  <legend class="option__legend">Транспорт</legend>
+                  <button class="option__button" type="button">
                     <span class="visually-hidden">Развернуть список.</span>
                   </button>
-                </label>
+                </div>
                 <ul class="option__list">
-                  <li class="form__personal-item">
+                  <li class="option__personal-item">
                     <input class="visually-hidden" name="personal-airplane" type="checkbox" checked>
                     <!-- SVG - airplane -->
                     <span class="visually-hidden">Самолет.</span>
                   </li>
-                  <li class="form__personal-item">
+                  <li class="option__personal-item">
                     <input class="visually-hidden" name="personal-automobile" type="checkbox" checked>
                     <!-- SVG - automobile -->
                     <span class="visually-hidden">Автомобиль.</span>
                   </li>
-                  <li class="form__personal-item">
+                  <li class="option__personal-item">
                     <input class="visually-hidden" name="personal-bike" type="checkbox">
                     <!-- SVG - bike -->
                     <span class="visually-hidden">Велосипед.</span>
                   </li>
-                  <li class="form__personal-item">
+                  <li class="option__personal-item">
                     <input class="visually-hidden" name="personal-pedestrian" type="checkbox" checked>
                     <!-- SVG - pedestrian -->
                     <span class="visually-hidden">Пешком.</span>
@@ -992,12 +990,12 @@
                 </ul>
               </fieldset>
               <fieldset class="option__fieldset">
-                <label class="option__label">
-                  <span class="option__label-text">Транспорт</span>
-                  <button class="option__label-button" type="button">
+                <div class="option__block">
+                  <legend class="option__legend">Левел</legend>
+                  <button class="option__button" type="button">
                     <span class="visually-hidden">Развернуть список.</span>
                   </button>
-                </label>
+                </div>
                 <div class="option__range">
                   <div class="option__level">
                     <label class="visually-hidden" for="minimum-level">Минимальный уровень.</label>
@@ -1028,10 +1026,10 @@
                 <a class="card__link" href="#">
                   <img class="card__photo" src="img/tanya-firsova.jpg" width="70" height="70" alt="Таня Фирсова.">
                 </a>
-                <p class="card__name">
+                <div class="card__name">
                   <!-- SVG - status -->
-                  <span class="card__name-text">Таня Фирсова</span>
-                </p>
+                  <h3 class="card__name-title">Таня Фирсова</h3>
+                </div>
                 <div class="card__like">
                   <button class="card__like-button" type="button">
                     <span class="visually-hidden">Поставить лайк.</span>
@@ -1099,10 +1097,10 @@
                 <a class="card__link" href="#">
                   <img class="card__photo" src="img/petya-demin.jpg" width="70" height="70" alt="Петя Демин.">
                 </a>
-                <p class="card__name">
+                <div class="card__name">
                   <!-- SVG - status -->
-                  <span class="card__name-text">Петя Демин</span>
-                </p>
+                  <h3 class="card__name-title">Петя Демин</h3>
+                </div>
                 <div class="card__like">
                   <button class="card__like-button" type="button">
                     <span class="visually-hidden">Поставить лайк.</span>
@@ -1163,10 +1161,10 @@
                 <a class="card__link" href="#">
                   <img class="card__photo" src="img/mark-smolov.jpg" width="70" height="70" alt="Марк Смолов.">
                 </a>
-                <p class="card__name">
+                <div class="card__name">
                   <!-- SVG - status -->
-                  <span class="card__name-text">Марк Смолов</span>
-                </p>
+                  <h3 class="card__name-title">Марк Смолов</h3>
+                </div>
                 <div class="card__like">
                   <button class="card__like-button" type="button">
                     <span class="visually-hidden">Поставить лайк.</span>
@@ -1231,10 +1229,10 @@
                 <a class="card__link" href="#">
                   <img class="card__photo" src="img/larisa-rogovaya.jpg" width="70" height="70" alt="Лариса Роговая.">
                 </a>
-                <p class="card__name">
+                <div class="card__name">
                   <!-- SVG - status -->
-                  <span class="card__name-text">Лариса Роговая</span>
-                </p>
+                  <h3 class="card__name-title">Лариса Роговая</h3>
+                </div>
                 <div class="card__like">
                   <button class="card__like-button" type="button">
                     <span class="visually-hidden">Поставить лайк.</span>
@@ -1294,7 +1292,7 @@
 
         <!-- show start -->
           <div class="show">
-            <button class="show__button" type="button">Показать еще</button>
+            <a class="show__button" href="#">Показать еще</a>
             <div class="show__pagination">
               <a class="show__pagination-link" href="#">
                 <span class="visually-hidden">Предыдущая страница.</span>
