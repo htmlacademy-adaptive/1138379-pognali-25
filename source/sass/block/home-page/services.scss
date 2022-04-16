@@ -1,0 +1,70 @@
+.services {
+  background-color: var(--bg-yankees-blue);
+}
+
+.services__block {
+  width: 210px;
+}
+
+.services__text-br {
+  &--mobile {
+    display: block;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.services__button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .services__block {
+    width: 310px;
+  }
+
+  .services__text-br {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+
+  .services__button {
+    display: flex;
+    width: 276px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services__block {
+    width: 620px;
+  }
+
+  .services__text-br {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}

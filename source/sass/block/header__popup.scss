@@ -1,0 +1,20 @@
+.header__popup {
+  display: block;
+  background-color: var(--basic-white);
+}
+
+.header__popup-button {
+  width: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .header__popup-button {
+    width: 188px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__popup {
+    display: none;
+  }
+}

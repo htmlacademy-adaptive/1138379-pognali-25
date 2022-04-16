@@ -1,0 +1,35 @@
+.button {
+  min-height: 62px;
+  width: 270px;
+  background-color: var(--button-gargoyle);
+  border-radius: 10px;
+  color: var(--color-cloud-burst);
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 23px;
+}
+
+.button__icon-svg {
+  flex-shrink: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 618px;
+    min-height: 80px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+    padding: 28px 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 276px;
+  }
+}

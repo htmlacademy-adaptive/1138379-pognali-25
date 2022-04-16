@@ -1,0 +1,30 @@
+.intro {
+  background-color: var(--bg-mirage);
+}
+
+.intro__title {
+  margin: 0;
+  width: 240px;
+  text-align: center;
+  color: var(--basic-white);
+  font-size: 36px;
+  line-height: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__title {
+    font-size: 60px;
+    line-height: 70px;
+    width: 400px;
+  }
+
+  .intro__authorization {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__title {
+    text-align: left;
+  }
+}

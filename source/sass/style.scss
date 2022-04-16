@@ -1,1 +1,36 @@
-// Начните писать стили здесь
+// global
+@import "global/fonts";
+@import "global/variables";
+@import "global/global-elements";
+@import "global/visually-hidden";
+@import "global/container";
+
+// global-block
+@import "global-block/authorization.scss";
+@import "global-block/button-menu.scss";
+@import "global-block/button.scss";
+@import "global-block/contacts.scss";
+@import "global-block/description.scss";
+@import "global-block/logo.scss";
+@import "global-block/navigation.scss";
+@import "global-block/progress.scss";
+@import "global-block/social.scss";
+@import "global-block/title.scss";
+
+// block
+@import "block/header.scss";
+@import "block/header__popup.scss";
+@import "block/main.scss";
+@import "block/footer.scss";
+
+// home-page
+@import "block/home-page/intro.scss";
+@import "block/home-page/review.scss";
+@import "block/home-page/action.scss";
+@import "block/home-page/services.scss";
+@import "block/home-page/directions.scss";
+@import "block/home-page/companion.scss";
+@import "block/home-page/tariffs.scss";
+@import "block/home-page/tariffs__modal.scss";
+@import "block/home-page/interested.scss";
+@import "block/home-page/address.scss";

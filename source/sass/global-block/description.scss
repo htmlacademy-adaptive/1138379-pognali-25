@@ -1,0 +1,39 @@
+.description {
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.description__text {
+  margin: 0;
+  font-weight: 300;
+
+  &--dark {
+    color: var(--color-tundora);
+  }
+}
+
+.description__quote {
+  font-weight: 700;
+
+  &--dark {
+    color: var(--color-tundora);
+  }
+}
+
+.description__link {
+  color: #ffd74b;
+  border-bottom: 1px solid rgba(255, 215, 75, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .description__text {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .description__quote {
+    font-size: 21px;
+    line-height: 24px;
+  }
+}

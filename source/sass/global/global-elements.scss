@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Blogger Sans", sans-serif;
+  color: var(--color-tundora);
+
+  background-color: var(--bg-athens-gray);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+button {
+  cursor: pointer;
+}

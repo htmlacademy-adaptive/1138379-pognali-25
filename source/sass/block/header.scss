@@ -1,0 +1,45 @@
+.header {
+  background-color: var(--bg-mirage);
+}
+
+.header__navigation {
+  display: none;
+}
+
+.header__authorization {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header__authorization {
+    display: flex;
+
+    & a:nth-child(1) {
+      display: none;
+    }
+
+    & a:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__button-menu {
+    display: none;
+  }
+
+  .header__navigation {
+    display: flex;
+  }
+
+  .header__authorization {
+    & a:nth-child(1) {
+      display: flex;
+    }
+
+    & a:nth-child(2) {
+      display: flex;
+    }
+  }
+}
