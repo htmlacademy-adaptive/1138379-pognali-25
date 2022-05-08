@@ -1,0 +1,305 @@
+.companions {
+  background-color: #192144;
+  background-image: url("../img/companions/companion-rectangle.svg"), url("../img/companions/companion-rogovaya-mobile.png"), url("../img/companions/companion-smolov-mobile.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 104px) 62px, calc(50% - 128px) 337px, calc(50% - -63px) 65px;
+  background-size: 113px 132px, 64px 71px, 143px 143px;
+  z-index: $z-index-companions;
+
+  @include indent-bottom-mobile;
+}
+
+.companions__container {
+  padding-top: 65px + $padding-top-plus-mobile;
+  padding-bottom: 30px;
+}
+
+.companions__header {
+  margin-bottom: 56px;
+}
+
+.companions__title {
+  margin: 0 24px 20px;
+}
+
+.companions__description {
+  margin: 0 24px;
+  margin-right: 30px;
+}
+
+.companions__description-text {
+  margin-bottom: 21px;
+}
+
+.companions__description-br {
+  display: none;
+}
+
+.companions__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 19px;
+}
+
+.companions__item {
+  position: relative;
+}
+
+.companions__photo {
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.companions__progress {
+  top: 17px;
+  left: 17px;
+  position: absolute;
+}
+
+.companions__block {
+  background-color: var(--basic-white);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  min-height: 158px;
+  padding: 25px 22px 19px;
+  position: relative;
+}
+
+.companions__flag {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 20px;
+  width: 145px;
+  justify-content: center;
+}
+
+.companions__flag-image {
+  display: block;
+}
+
+.companions__name {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-7px);
+  margin-bottom: 14px;
+}
+
+.companions__name-title {
+  margin: 0;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-blue-light);
+}
+
+.companions__name-status {
+  margin-right: 10px;
+
+  &--offline {
+    color: #f97676;
+  }
+
+  &--online {
+    color: #81e31e;
+  }
+}
+
+.companions__tag {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 188px;
+  justify-content: center;
+  margin: 0 auto;
+  line-height: 18px;
+  font-size: 16px;
+  margin-bottom: 13px;
+  column-gap: 5px;
+}
+
+.companions__transport {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  width: 128px;
+  justify-content: space-between;
+  margin: 0 auto;
+  column-gap: 6px;
+}
+
+.companions__transport-item {
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+
+.companions__transport-icon {
+  margin: auto;
+
+  &--opacity {
+    opacity: 0.15;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .companions {
+    background-image: url("../img/companions/companion-rectangle.svg"), url("../img/companions/companion-rogovaya-tablet.png"), url("../img/companions/companion-smolov-tablet.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 237px) 128px, calc(50% - -168px) 140px, calc(50% - 272px) 486px;
+    background-size: 212px 212px, 285px 285px, 143px 143px;
+
+    @include indent-bottom-tablet;
+  }
+
+  .companions__container {
+    padding-top: 136px + $padding-top-plus-tablet;
+    padding-bottom: 87px;
+  }
+
+  .companions__title {
+    margin: 0 33px 58px;
+  }
+
+  .companions__description {
+    margin: 0 34px 60px;
+    margin-right: 215px;
+  }
+
+  .companions__description-text {
+    margin-bottom: 42px;
+  }
+
+  .companions__description-br {
+    display: block;
+  }
+
+  .companions__list {
+    flex-direction: row;
+    gap: 50px;
+    margin: 0 33px 81px;
+  }
+
+  .companions__progress {
+    top: 20px;
+    left: 24px;
+  }
+
+  .companions__photo {
+    width: 285px;
+    height: 286px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .companions__block {
+    width: 285px;
+    margin-top: -1px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 27px;
+    padding-bottom: 26px;
+  }
+
+  .companions__name {
+    margin-bottom: 22px;
+
+    &--firsova {
+      transform: translateX(-8px);
+    }
+
+    &--demin {
+      transform: translateX(-18px);
+    }
+  }
+
+  .companions__name-title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .companions__name-status {
+    width: 8px;
+    height: 8px;
+    position: relative;
+    margin-right: 12px;
+    top: 2px;
+    left: -3px;
+  }
+
+  .companions__tag {
+    font-size: 20px;
+    line-height: 23px;
+    width: 230px;
+    margin-bottom: 23px;
+  }
+
+  .companions__transport {
+    width: 120px;
+    column-gap: 10px;
+  }
+
+  .companions__button {
+    width: 616px;
+    margin: 0 auto;
+    padding-top: 23px;
+    padding-left: 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companions {
+    background-position: calc(50% - 552px) 128px, calc(50% - 388px) 445px, calc(50% - 100px) 195px;
+  }
+
+  .companions__container {
+    padding-top: 186px;
+    padding-bottom: 126px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header list"
+      "button list";
+  }
+
+  .companions__header {
+    grid-area: header;
+    margin-bottom: 0;
+  }
+
+  .companions__title {
+    margin: 0 70px 56px;
+  }
+
+  .companions__description {
+    margin: 0 70px;
+    margin-right: 120px;
+  }
+
+  .companions__list {
+    grid-area: list;
+    margin: 8px 30px 8px;
+    margin-right: 0;
+    gap: 60px;
+  }
+
+  .companions__button {
+    width: 280px;
+    height: 80px;
+    grid-area: button;
+    margin-top: 77px;
+    margin-left: 70px;
+    padding-left: 34px;
+  }
+}

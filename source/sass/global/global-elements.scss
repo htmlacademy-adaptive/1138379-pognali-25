@@ -14,13 +14,12 @@ body {
   min-width: 320px;
   min-height: 100%;
   margin: 0;
-
   font-size: 16px;
   line-height: 22px;
-  font-family: "Blogger Sans", sans-serif;
-  color: var(--color-tundora);
-
-  background-color: var(--bg-athens-gray);
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: 400;
+  color: var(--special-grey);
+  background-color: #edeff6;
 }
 
 a {
@@ -31,7 +30,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-
   object-fit: contain;
 }
 

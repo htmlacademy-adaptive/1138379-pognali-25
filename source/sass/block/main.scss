@@ -1,0 +1,45 @@
+$z-index-map: 1;
+$z-index-route-address: $z-index-map + 1;
+$z-index-interests: $z-index-route-address + 1;
+$z-index-tariffs: $z-index-interests + 1;
+$z-index-companions: $z-index-tariffs + 1;
+$z-index-directions: $z-index-companions + 1;
+$z-index-services: $z-index-directions + 1;
+$z-index-footer: $z-index-map + 1;
+
+$margin-top-minus-mobile: -30px;
+$border-radius-mobile: 30px;
+
+$padding-top-plus-mobile: 30px;
+
+@mixin indent-bottom-mobile() {
+  position: relative;
+  margin-top: $margin-top-minus-mobile;
+  border-bottom-right-radius: $border-radius-mobile;
+  border-bottom-left-radius: $border-radius-mobile;
+}
+
+@mixin indent-top-mobile() {
+  position: relative;
+  margin-top: $margin-top-minus-mobile;
+  border-top-right-radius: $border-radius-mobile;
+  border-top-left-radius: $border-radius-mobile;
+}
+
+$margin-top-minus-tablet: -60px;
+$border-radius-tablet: 60px;
+
+$padding-top-plus-tablet: 60px;
+
+@mixin indent-bottom-tablet() {
+  margin-top: $margin-top-minus-tablet;
+  border-bottom-right-radius: $border-radius-tablet;
+  border-bottom-left-radius: $border-radius-tablet;
+}
+
+@mixin indent-top-tablet() {
+  margin-top: $margin-top-minus-tablet;
+  border-top-right-radius: $border-radius-tablet;
+  border-top-left-radius: $border-radius-tablet;
+}
+

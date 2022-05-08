@@ -1,0 +1,64 @@
+.route-address {
+  background-color: var(--basic-yellow);
+  z-index: $z-index-route-address;
+
+  @include indent-bottom-mobile();
+}
+
+.route-address__container {
+  padding-top: 30px + $padding-top-plus-mobile;
+  padding-bottom: 35px;
+}
+
+.route-address__contacts {
+  margin-bottom: 34px;
+}
+
+.route-address__button {
+  border: 3px solid #192144;
+  padding: 19px 19px;
+  padding-right: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .route-address {
+    @include indent-bottom-tablet();
+  }
+
+  .route-address__container {
+    padding-top: 47px + $padding-top-plus-tablet;
+    padding-bottom: 84px;
+  }
+
+  .route-address__contacts {
+    margin: 0 38px 45px;
+  }
+
+  .route-address__button {
+    width: 618px;
+    margin: 0 auto;
+    padding-left: 34px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .route-address__container {
+    display: flex;
+    align-items: center;
+    padding-top: 114px;
+    padding-bottom: 57px;
+  }
+
+  .route-address__contacts {
+    margin: 0;
+    margin-left: 223px;
+  }
+
+  .route-address__button {
+    width: 324px;
+    height: 80px;
+    flex-shrink: 0;
+    margin-right: 75px;
+  }
+}

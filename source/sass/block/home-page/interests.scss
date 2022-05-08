@@ -1,0 +1,165 @@
+.interests {
+  background-color: #192144;
+  z-index: $z-index-interests;
+
+  @include indent-bottom-mobile();
+}
+
+.interests__container {
+  padding-top: 69px + $padding-top-plus-mobile;
+  padding-bottom: 30px;
+}
+
+.interests__header {
+  margin-bottom: 30px;
+}
+
+.interests__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.interests__description {
+  margin: 0 20px;
+  text-align: center;
+
+  &--footer {
+    margin-bottom: 20px;
+  }
+}
+
+.interests__form {
+  display: flex;
+  margin-bottom: 27px;
+}
+
+.interests__email {
+  padding: 22px 25px;
+  border: 0;
+  width: 220px;
+  height: 62px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: "Blogger Sans", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--special-grey);
+
+  &::placeholder {
+    font-family: "Blogger Sans", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: var(--special-grey);
+    opacity: 0.3;
+  }
+}
+
+.interests__button {
+  width: 62px;
+  border: 0;
+  margin-left: -10px;
+  padding-left: 26px;
+}
+
+.interests__button-text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .interests {
+    @include indent-bottom-tablet();
+  }
+
+  .interests__container {
+    padding-top: 69px + $padding-top-plus-tablet;
+    padding-bottom: 60px;
+  }
+
+  .interests__header {
+    margin-bottom: 68px;
+  }
+
+  .interests__description {
+    &--footer {
+      margin-bottom: 43px;
+    }
+  }
+
+  .interests__title {
+    margin-bottom: 60px;
+  }
+
+  .interests__description-br {
+    display: none;
+  }
+
+  .interests__form {
+    justify-content: center;
+    margin-bottom: 55px;
+  }
+
+  .interests__email {
+    width: 536px;
+    height: 80px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 36px;
+    padding-bottom: 26px;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::placeholder {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  .interests__button {
+    width: 80px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+    padding-left: 35px;
+    padding-top: 31px;
+  }
+
+  .interests__contacts {
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .interests__container {
+    padding-top: 164px;
+    padding-bottom: 105px;
+  }
+
+  .interests__header {
+    margin-bottom: 58px;
+  }
+
+  .interests__form {
+    margin-bottom: 66px;
+  }
+
+  .interests__email {
+    width: 850px;
+  }
+
+  .interests__button {
+    width: 330px;
+    padding: 28px 37px;
+  }
+
+  .interests__button-text {
+    display: block;
+  }
+
+  .interests__contacts {
+    display: flex;
+    margin-left: 226px;
+  }
+}
+

@@ -1,57 +1,58 @@
 .authorization {
   display: flex;
   flex-wrap: wrap;
-  width: 270px;
-}
-
-.authorization__button-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-
-  &--phone {
-    background-color: var(--button-deep-saffron);
-  }
-
-  &--email {
-    background-color: var(--button-saffron);
-  }
-}
-
-.authorization__icon-svg {
-  margin: auto;
 }
 
 .authorization__button {
-  width: 190px;
-  min-height: 40px;
-  padding: 10px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  border-radius: 25px;
-  background-color: var(--button-gargoyle);
-  font-size: 17px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: var(--color-mirage);
-  font-weight: 700;
+  background-color: var(--basic-yellow);
+
+  &--phone {
+    background-color: var(--special-orange);
+  }
+
+  &--email {
+    background-color: var(--special-yellow-dark);
+  }
+
+  &--phone,
+  &--email {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  &--entry {
+    width: 190px;
+    min-height: 40px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(----basic-blue);
+    padding: 10px;
+  }
+}
+
+.authorization__icon {
+  margin: auto;
 }
 
 @media (min-width: $tablet-width) {
-  .authorization {
-    width: 290px;
-  }
-
-  .authorization__button-icon {
-    width: 50px;
-    height: 50px;
-  }
-
   .authorization__button {
-    min-height: 50px;
-    font-size: 20px;
-    padding: 15px;
+    &--phone,
+    &--email {
+      width: 50px;
+      height: 50px;
+    }
+
+    &--entry {
+      width: 188px;
+      min-height: 50px;
+      font-size: 20px;
+      padding: 16px;
+    }
   }
 }

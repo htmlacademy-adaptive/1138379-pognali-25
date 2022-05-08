@@ -2,7 +2,7 @@
   color: var(--basic-white);
 
   &--dark {
-    color: var(--color-yankees-blue);
+    color: var(--basic-black);
   }
 }
 
@@ -18,8 +18,10 @@
   &--desktop {
     display: none;
   }
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .logo__image {
     &--mobile {
       display: none;
     }
@@ -32,8 +34,10 @@
       display: none;
     }
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .logo__image {
     &--mobile {
       display: none;
     }
