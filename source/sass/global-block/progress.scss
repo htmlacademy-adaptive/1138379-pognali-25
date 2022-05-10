@@ -1,0 +1,82 @@
+.progress {
+  width: 60px;
+  height: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: var(--basic-white);
+    opacity: 0.3;
+    width: 30px;
+    top: 36px;
+    z-index: 1;
+  }
+
+  // &--large {
+  //   &::before {
+  //     background-color: #444444;
+  //     width: 52px;
+  //     top: 52px;
+  //   }
+  // }
+}
+
+.progress__circle {
+  transform: rotate(-90deg);
+  stroke: #ff8d30;
+  fill-opacity: 0.6;
+
+  // &--large {
+  //   fill-opacity: 0;
+  // }
+}
+
+.progress__level,
+.progress__text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--basic-white);
+}
+
+.progress__level {
+  top: 12px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+
+  // &--large {
+  //   font-size: 38px;
+  //   line-height: 38px;
+  //   color: var(--color-mirage);
+  // }
+}
+
+.progress__text {
+  top: 38px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  opacity: 0.9;
+
+  // &--large {
+  //   font-size: 18px;
+  //   line-height: 18px;
+  //   color: var(--color-tundora);
+  //   top: 60px;
+  // }
+}
+
+// @media (min-width: $desktop-width) {
+//   .progress::before {
+//     background-color: var(--basic-white);
+//   }
+
+//   .progress__text,
+//   .progress__level {
+//     color: var(--basic-white);
+//   }
+// }

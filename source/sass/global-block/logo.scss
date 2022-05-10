@@ -1,0 +1,53 @@
+.logo {
+  color: var(--basic-white);
+
+  &--dark {
+    color: var(--basic-black);
+  }
+}
+
+.logo__image {
+  &--mobile {
+    display: block;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__image {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}

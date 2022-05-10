@@ -1,0 +1,29 @@
+.button {
+  min-height: 62px;
+  background-color: var(--basic-yellow);
+  border-radius: 10px;
+  color: var(--basic-blue-light);
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 23px;
+  padding-right: 20px;
+}
+
+.button__icon-svg {
+  flex-shrink: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    min-height: 80px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+    padding: 28px 33px;
+    padding-top: 25px;
+  }
+}

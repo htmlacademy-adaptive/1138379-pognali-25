@@ -1,0 +1,17 @@
+.button-menu {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: var(--basic-white);
+  display: flex;
+  width: 25px;
+  height: 25px;
+
+  &--dark {
+    color: #cccccc;
+  }
+}
+
+.button-menu__icon {
+  margin: auto;
+}

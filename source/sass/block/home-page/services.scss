@@ -1,0 +1,124 @@
+.services {
+  background-color: #192144;
+  background-image: url("../img/services/services-about-mobile.png"), url("../img/services/services-rectangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 4px) 0, calc(50% - 104px) 0;
+  background-size: 292px 353px, 113px 132px;
+  position: relative;
+
+  z-index: $z-index-services;
+  border-radius: 0 0 $border-radius-mobile $border-radius-mobile;
+}
+
+.services__container {
+  padding-top: 29px;
+  padding-bottom: 83px;
+}
+
+.services__title {
+  margin: 0 25px 20px;
+}
+
+.services__description {
+  margin: 0 25px;
+}
+
+.services__description-text {
+  margin-bottom: 20px;
+}
+
+.services__description-br {
+  display: none;
+
+  &--mobile {
+    display: block;
+  }
+}
+
+.services__button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .services {
+    background-image: url("../img/services/services-about-tablet.png"), url("../img/services/services-rectangle-tablet.svg");
+    background-position: calc(50% + 188px) 44px, calc(50%) -10px;
+    background-size: 378px 548px, 688px 212px;
+    border-radius: 0 0 $border-radius-tablet $border-radius-tablet;
+  }
+
+  .services__container {
+    padding-top: 31px;
+    padding-bottom: 88px;
+  }
+
+  .services__title {
+    margin: 0 33px 44px;
+  }
+
+  .services__description {
+    margin: 0 35px 55px;
+    margin-right: 350px;
+  }
+
+  .services__description-text {
+    margin-bottom: 30px;
+  }
+
+  .services__description-br {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  .services__button {
+    display: flex;
+    width: 275px;
+    margin-left: 33px;
+    padding-right: 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services {
+    background-image: url("../img/services/services-about-desktop.png"), url("../img/services/services-rectangle-desktop.svg");
+    background-position: calc(50% + 345px) 86px, calc(50% + -553px) 70px;
+    background-size: 630px 665px, 212px 212px;
+  }
+
+  .services__container {
+    padding-top: 128px;
+    padding-bottom: 163px;
+  }
+
+  .services__title {
+    margin: 0 70px 60px;
+  }
+
+  .services__description {
+    margin: 0 70px 86px;
+    margin-right: 630px;
+  }
+
+  .services__description-text {
+    margin-bottom: 40px;
+  }
+
+  .services__description-br {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
+  .services__button {
+    margin-left: 70px;
+  }
+}
