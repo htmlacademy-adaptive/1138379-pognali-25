@@ -10,14 +10,38 @@
   padding-bottom: 35px;
 }
 
-.route-address__contacts {
+.route-address__block {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--basic-blue-light);
+  padding-left: 60px;
+  position: relative;
   margin-bottom: 34px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #121936;
+    background-image: url("../img/route-address/route-address-location.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .route-address__button {
   border: 3px solid #192144;
   padding: 19px 19px;
-  padding-right: 17px;
+
+  &::before {
+    top: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -26,12 +50,27 @@
   }
 
   .route-address__container {
-    padding-top: 47px + $padding-top-plus-tablet;
+    padding-top: 67px + $padding-top-plus-tablet;
     padding-bottom: 84px;
   }
 
-  .route-address__contacts {
-    margin: 0 38px 45px;
+  .route-address__block {
+    font-size: 28px;
+    line-height: 28px;
+    padding-left: 93px;
+    margin-left: 35px;
+    margin-bottom: 65px;
+
+    &::before {
+      top: -20px;
+      width: 68px;
+      height: 68px;
+      background-size: 32px 32px;
+    }
+  }
+
+  .route-address__br {
+    display: none;
   }
 
   .route-address__button {
@@ -39,6 +78,10 @@
     margin: 0 auto;
     padding-left: 34px;
     padding-right: 30px;
+
+    &::before {
+      top: 30px;
+    }
   }
 }
 
@@ -46,13 +89,21 @@
   .route-address__container {
     display: flex;
     align-items: center;
-    padding-top: 114px;
-    padding-bottom: 57px;
+    padding-top: 118px;
+    padding-bottom: 62px;
   }
 
-  .route-address__contacts {
+  .route-address__block {
     margin: 0;
-    margin-left: 223px;
+    margin-left: 224px;
+    padding-left: 120px;
+
+    &::before {
+      top: -30px;
+      width: 90px;
+      height: 90px;
+      background-size: 42px 42px;
+    }
   }
 
   .route-address__button {

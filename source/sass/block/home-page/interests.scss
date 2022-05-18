@@ -60,7 +60,11 @@
   width: 62px;
   border: 0;
   margin-left: -10px;
-  padding-left: 26px;
+
+  &::before {
+    top: 23px;
+    right: 20px;
+  }
 }
 
 .interests__button-text {
@@ -123,6 +127,11 @@
     margin-left: 0;
     padding-left: 35px;
     padding-top: 31px;
+
+    &::before {
+      top: 33px;
+      right: 34px;
+    }
   }
 
   .interests__contacts {
@@ -151,6 +160,11 @@
   .interests__button {
     width: 330px;
     padding: 28px 37px;
+
+    &::before {
+      top: 31px;
+      right: 36px;
+    }
   }
 
   .interests__button-text {
