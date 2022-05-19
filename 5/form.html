@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <title>Погнали | Форма</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Описание контента">
+    <meta name="keywords" content="Ключевые, слова, через, запятую">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+.perfect-pixel {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  max-width: none;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0.3;
+}
+
+    </style>
+    <base href="https://htmlacademy-adaptive.github.io/1138379-pognali-25/5/">
+</head>
+
+  <body class="page">
+
+    <!-- perfect-pixel start -->
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/perfect-pixel/form-desktop.png">
+        <source media="(min-width: 768px)" srcset="img/perfect-pixel/form-tablet.png">
+        <img class="perfect-pixel" src="img/perfect-pixel/form-mobile.png">
+      </picture>
+    <!-- perfect-pixel end -->
+
+    <!-- header start -->
+      <header class="header header--closed header--nojs header--form">
+        <div class="header__inner">
+          <nav class="header__container header__container--form container">
+
+            <!-- logo start -->
+              <a class="header__logo logo" href="index.html">
+                <svg class="logo__image logo__image--mobile" width="96" height="15">
+                  <use href="img/svg-logo/svg-logo.svg#logo-mobile"></use>
+                </svg>
+                <svg class="logo__image logo__image--tablet" width="166" height="42">
+                  <use href="img/svg-logo/svg-logo.svg#logo-tablet"></use>
+                </svg>
+                <span class="visually-hidden">Логотип интернет-сервиса 'Погнали'.</span>
+              </a>
+            <!-- logo end -->
+
+            <!-- button-menu start -->
+              <button class="header__button-menu button-menu" type="button">
+                <svg class="header__button-icon header__button-icon--open header__button-icon--closed button-menu__icon" width="25" height="11">
+                  <use href="img/svg-icon/svg-icon.svg#button-menu-open"></use>
+                </svg>
+                <svg class="button-menu__icon header__button-icon--close" width="20" height="20">
+                  <use href="img/svg-icon/svg-icon.svg#button-menu-close"></use>
+                </svg>
+                <span class="visually-hidden">Открыть меню.</span>
+              </button>
+            <!-- button-menu end -->
+
+            <ul class="header__navigation">
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">О сервисе</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">Направления</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">Попутчики</a>
+              </li>
+            </ul>
+
+            <!-- authorization start -->
+              <div class="header__authorization authorization">
+                <a class="header__authorization-button authorization__button authorization__button--phone" href="tel:88005558628">
+                  <svg class="authorization__icon" width="18" height="18">
+                    <use href="img/svg-icon/svg-icon.svg#authorization-phone"></use>
+                  </svg>
+                  <span class="visually-hidden">8 800 555-86-28</span>
+                </a>
+                <a class="header__authorization-button authorization__button authorization__button--email" href="mailto:mail@htmlacademy.ru">
+                  <svg class="authorization__icon" width="18" height="16">
+                    <use href="img/svg-icon/svg-icon.svg#authorization-email"></use>
+                  </svg>
+                  <span class="visually-hidden">mail@htmlacademy.ru</span>
+                </a>
+                <a class="header__authorization-button header__authorization-button--entry authorization__button authorization__button--entry" href="#">Авторизация</a>
+              </div>
+            <!-- authorization end -->
+
+            <!-- contacts start -->
+              <div class="header__contacts contacts">
+                <a class="contacts__link" href="tel:88005558628">
+                  <span class="contacts__icon-block">
+                    <svg class="contacts__icon-svg contacts__icon-svg--phone" width="18" height="17">
+                      <use href="img/svg-icon/svg-icon.svg#contact-phone"></use>
+                    </svg>
+                  </span>
+                  <span class="contacts__text contacts__text--dark">8 800 555-86-28</span>
+                </a>
+                <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
+                  <span class="contacts__icon-block">
+                    <svg class="contacts__icon-svg contacts__icon-svg--email" width="19" height="13">
+                      <use href="img/svg-icon/svg-icon.svg#contact-email"></use>
+                    </svg>
+                  </span>
+                  <span class="contacts__text contacts__text--dark">mail@htmlacademy.ru</span>
+                </a>
+              </div>
+            <!-- contacts end -->
+
+            <!-- social start -->
+              <ul class="header__social header__social--closed social">
+                <li class="social__item">
+                  <a class="social__link social__link--transparent" href="#">
+                    <svg class="social__icon-svg social__icon-svg--telegram" width="21" height="19">
+                      <use href="img/svg-icon/svg-icon.svg#telegram"></use>
+                    </svg>
+                    <span class="visually-hidden">Телеграм.</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--transparent" href="#">
+                    <svg class="social__icon-svg social__icon-svg--vkontakte" width="30" height="16">
+                      <use href="img/svg-icon/svg-icon.svg#vkontakte"></use>
+                    </svg>
+                    <span class="visually-hidden">Вконтакте.</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--transparent" href="#">
+                    <svg class="social__icon-svg social__icon-svg--youtube" width="20" height="16">
+                      <use href="img/svg-icon/svg-icon.svg#youtube"></use>
+                    </svg>
+                    <span class="visually-hidden">Youtube.</span>
+                  </a>
+                </li>
+              </ul>
+            <!-- social end -->
+
+            <div class="header__block">
+              <p class="header__title">Направления</p>
+            </div>
+
+          </nav>
+        </div>
+      </header>
+    <!-- header end -->
+
+    <!-- main start -->
+      <main class="main">
+        <h1 class="visually-hidden">Личные данные и планы.</h1>
+
+        <!-- form start -->
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
+
+            <!-- form__personal start -->
+              <fieldset class="form__personal">
+                <div class="form__personal-container container">
+                  <legend class="visually-hidden">Личные данные</legend>
+
+                    <!-- progress start -->
+                      <div class="form__personal-progress progress progress--large">
+                        <svg class="form__personal-circle form__personal-circle--mobile progress__circle progress__circle--large" width="100" height="100">
+                          <use href="img/svg-icon/svg-icon.svg#progress-mobile"></use>
+                        </svg>
+                        <svg class="form__personal-circle form__personal-circle--tablet progress__circle progress__circle--large" width="94" height="94">
+                          <use href="img/svg-icon/svg-icon.svg#progress-tablet"></use>
+                        </svg>
+                        <span class="progress__level progress__level--large">80</span>
+                        <span class="progress__text progress__text--large">level</span>
+                      </div>
+                    <!-- progress end -->
+
+                    <picture class="form__personal-picture">
+                      <source media="(min-width: 1440px)" srcset="img/form/form-demin-desktop.png">
+                      <source media="(min-width: 768px)" srcset="img/form/form-demin-tablet.png">
+                      <img class="form__personal-photo" src="img/form/form-demin-mobile.png" width="100" height="100" alt="Петя Демин.">
+                    </picture>
+
+                    <button class="form__personal-button" type="button"><span class="form__personal-button-delete">Сменить</span> фото</button>
+
+                    <div class="form__personal-block form__personal-block--hashtag">
+                      <span class="form__personal-title form__personal-title--hashtag">Тэги</span>
+                      <textarea class="form__personal-textarea" name="personal-hashtag">
+#бургер #бар #футбол #концерт #крафт
+                      </textarea>
+                    </div>
+
+                    <div class="form__personal-block form__personal-block--transport">
+                      <span class="form__personal-title form__personal-title--transport">Транспорт</span>
+                      <ul class="form__personal-list">
+                        <li class="form__personal-item">
+                          <input class="form__personal-input visually-hidden" name="personal-airplane" type="checkbox">
+                          <svg class="form__personal-icon" width="21" height="22">
+                            <use href="img/svg-icon/svg-icon.svg#transport-airplane"></use>
+                          </svg>
+                          <span class="visually-hidden">Самолет.</span>
+                        </li>
+                        <li class="form__personal-item">
+                          <input class="form__personal-input visually-hidden" name="personal-automobile" type="checkbox" checked>
+                          <svg class="form__personal-icon" width="18" height="20">
+                            <use href="img/svg-icon/svg-icon.svg#transport-automobile"></use>
+                          </svg>
+                          <span class="visually-hidden">Автомобиль.</span>
+                        </li>
+                        <li class="form__personal-item">
+                          <input class="form__personal-input visually-hidden" name="personal-bike" type="checkbox">
+                          <svg class="form__personal-icon form__personal-icon--opacity" width="24" height="24 ">
+                            <use href="img/svg-icon/svg-icon.svg#transport-bike"></use>
+                          </svg>
+                          <span class="visually-hidden">Велосипед.</span>
+                        </li>
+                        <li class="form__personal-item">
+                          <input class="form__personal-input visually-hidden" name="personal-pedestrian" type="checkbox" checked>
+                          <svg class="form__personal-icon" width="21" height="24">
+                            <use href="img/svg-icon/svg-icon.svg#transport-pedestrian"></use>
+                          </svg>
+                          <span class="visually-hidden">Пешком.</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                </div>
+              </fieldset>
+            <!-- form__personal end -->
+
+            <!-- form__plan start -->
+              <fieldset class="form__plan">
+                <div class="form__plan-container container">
+                  <legend class="form__plan-title heading-plan">Мои планы:</legend>
+                  <ol class="form__plan-list">
+                    <li class="form__plan-item">
+                      <h2 class="form__plan-subtitle">Франция, Италия</h2>
+                      <span class="form__plan-text form__plan-text--companions">3 попутчика</span>
+                      <span class="form__plan-text form__plan-text--dates">26 мар &mdash; 29 мар</span>
+                      <a class="form__plan-link" href="#">Изменить</a>
+                    </li>
+                    <li class="form__plan-item">
+                      <h2 class="form__plan-subtitle">Таиланд, Индонезия</h2>
+                      <span class="form__plan-text form__plan-text--companions">1 попутчик</span>
+                      <span class="form__plan-text form__plan-text--dates">1 июл &mdash; 15 июл</span>
+                      <a class="form__plan-link" href="#">Изменить</a>
+                    </li>
+                  </ol>
+                </div>
+              </fieldset>
+            <!-- form__plan end -->
+
+            <!-- form__add start -->
+              <fieldset class="form__add">
+                <div class="form__add-container container">
+
+                  <div class="form__add-block">
+                    <legend class="form__add-title heading-plan">Добавить план:</legend>
+
+                      <!-- form__add-mark start -->
+                        <ol class="form__add-mark">
+                          <li class="form__add-mark-item form__add-mark-item--current">
+                            <span class="visually-hidden">Шаг 1. Даты пребывания.</span>
+                          </li>
+                          <li class="form__add-mark-item">
+                            <span class="visually-hidden">Шаг 2. Маршрут.</span>
+                          </li>
+                          <li class="form__add-mark-item">
+                            <span class="visually-hidden">Шаг 3. Развлечения.</span>
+                          </li>
+                        </ol>
+                      <!-- form__add-mark end -->
+
+                  </div>
+                  
+                </div>
+              </fieldset>
+            <!-- form__add end -->
+
+          </form>
+        <!-- form end -->
+
+      </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+      <footer class="footer">
+
+
+
+      </footer>
+    <!-- footer end -->
+
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
