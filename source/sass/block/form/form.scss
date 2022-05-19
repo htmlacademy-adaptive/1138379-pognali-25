@@ -488,13 +488,20 @@
   padding-top: 25px;
 }
 
-// form__add-mark start
+.form__add-block {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+  margin-bottom: 29px;
+}
 
+// form__add-mark start
 .form__add-mark {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style-type: none;
   display: flex;
+  justify-content: space-between;
 }
 
 .form__add-mark-item {
@@ -510,7 +517,6 @@
     border-radius: 5px;
   }
 }
-
 // form__add-mark end
 
 // form__add end
