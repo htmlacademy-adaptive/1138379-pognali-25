@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <title>Погнали | Форма</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Описание контента">
+    <meta name="keywords" content="Ключевые, слова, через, запятую">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+.perfect-pixel {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  max-width: none;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0.3;
+}
+
+    </style>
+  </head>
+
+  <body class="page">
+
+    <!-- perfect-pixel start -->
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/perfect-pixel/form-desktop.png">
+        <source media="(min-width: 768px)" srcset="img/perfect-pixel/form-tablet.png">
+        <img class="perfect-pixel" src="img/perfect-pixel/form-mobile.png">
+      </picture>
+    <!-- perfect-pixel end -->
+
+    <!-- header start -->
+      <header class="header header--closed header--nojs header--form">
+        <div class="header__inner">
+          <nav class="header__container header__container--form container">
+
+            <!-- logo start -->
+              <a class="header__logo logo" href="index.html">
+                <svg class="logo__image logo__image--mobile" width="96" height="15">
+                  <use href="img/svg-logo/svg-logo.svg#logo-mobile"></use>
+                </svg>
+                <svg class="logo__image logo__image--tablet" width="166" height="42">
+                  <use href="img/svg-logo/svg-logo.svg#logo-tablet"></use>
+                </svg>
+                <span class="visually-hidden">Логотип интернет-сервиса 'Погнали'.</span>
+              </a>
+            <!-- logo end -->
+
+            <!-- button-menu start -->
+              <button class="header__button-menu button-menu" type="button">
+                <svg class="header__button-icon header__button-icon--open header__button-icon--closed button-menu__icon" width="25" height="11">
+                  <use href="img/svg-icon/svg-icon.svg#button-menu-open"></use>
+                </svg>
+                <svg class="button-menu__icon header__button-icon--close" width="20" height="20">
+                  <use href="img/svg-icon/svg-icon.svg#button-menu-close"></use>
+                </svg>
+                <span class="visually-hidden">Открыть меню.</span>
+              </button>
+            <!-- button-menu end -->
+
+            <ul class="header__navigation">
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">О сервисе</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">Направления</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">Попутчики</a>
+              </li>
+            </ul>
+
+            <!-- authorization start -->
+              <div class="header__authorization authorization">
+                <a class="header__authorization-button authorization__button authorization__button--phone" href="tel:88005558628">
+                  <svg class="authorization__icon" width="18" height="18">
+                    <use href="img/svg-icon/svg-icon.svg#authorization-phone"></use>
+                  </svg>
+                  <span class="visually-hidden">8 800 555-86-28</span>
+                </a>
+                <a class="header__authorization-button authorization__button authorization__button--email" href="mailto:mail@htmlacademy.ru">
+                  <svg class="authorization__icon" width="18" height="16">
+                    <use href="img/svg-icon/svg-icon.svg#authorization-email"></use>
+                  </svg>
+                  <span class="visually-hidden">mail@htmlacademy.ru</span>
+                </a>
+                <a class="header__authorization-button header__authorization-button--entry authorization__button authorization__button--entry" href="#">Авторизация</a>
+              </div>
+            <!-- authorization end -->
+
+            <!-- contacts start -->
+              <div class="header__contacts contacts">
+                <a class="contacts__link" href="tel:88005558628">
+                  <span class="contacts__icon-block">
+                    <svg class="contacts__icon-svg contacts__icon-svg--phone" width="18" height="17">
+                      <use href="img/svg-icon/svg-icon.svg#contact-phone"></use>
+                    </svg>
+                  </span>
+                  <span class="contacts__text contacts__text--dark">8 800 555-86-28</span>
+                </a>
+                <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
+                  <span class="contacts__icon-block">
+                    <svg class="contacts__icon-svg contacts__icon-svg--email" width="19" height="13">
+                      <use href="img/svg-icon/svg-icon.svg#contact-email"></use>
+                    </svg>
+                  </span>
+                  <span class="contacts__text contacts__text--dark">mail@htmlacademy.ru</span>
+                </a>
+              </div>
+            <!-- contacts end -->
+
+            <!-- social start -->
+              <ul class="header__social header__social--closed social">
+                <li class="social__item">
+                  <a class="social__link social__link--transparent" href="#">
+                    <svg class="social__icon-svg social__icon-svg--telegram" width="21" height="19">
+                      <use href="img/svg-icon/svg-icon.svg#telegram"></use>
+                    </svg>
+                    <span class="visually-hidden">Телеграм.</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--transparent" href="#">
+                    <svg class="social__icon-svg social__icon-svg--vkontakte" width="30" height="16">
+                      <use href="img/svg-icon/svg-icon.svg#vkontakte"></use>
+                    </svg>
+                    <span class="visually-hidden">Вконтакте.</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--transparent" href="#">
+                    <svg class="social__icon-svg social__icon-svg--youtube" width="20" height="16">
+                      <use href="img/svg-icon/svg-icon.svg#youtube"></use>
+                    </svg>
+                    <span class="visually-hidden">Youtube.</span>
+                  </a>
+                </li>
+              </ul>
+            <!-- social end -->
+
+            <div class="header__block">
+              <p class="header__title">Направления</p>
+            </div>
+
+          </nav>
+        </div>
+      </header>
+    <!-- header end -->
+
+    <!-- main start -->
+      <main class="main">
+        <h1 class="visually-hidden">Личные данные и планы.</h1>
+
+        <!-- form start -->
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
+
+            <!-- form__personal start -->
+              <fieldset class="form__personal">
+                <div class="form__personal-container container">
+                  <legend class="visually-hidden">Личные данные</legend>
+
+                  <!-- progress start -->
+                    <div class="form__personal-progress progress progress--large">
+                      <svg class="progress__circle progress__circle--large" width="100" height="100">
+                        <circle r="48" cx="50" cy="50" stroke-width="4px" stroke-dasharray="250" stroke-dashoffset="1" stroke-linecap="round"></circle>
+                      </svg>
+                      <span class="progress__level progress__level--large">80</span>
+                      <span class="progress__text progress__text--large">level</span>
+                    </div>
+                  <!-- progress end -->
+
+                  <picture class="form__personal-picture">
+                    <source media="(min-width: 1440px)" srcset="img/form/form-demin-desktop.png">
+                    <source media="(min-width: 768px)" srcset="img/form/form-demin-tablet.png">
+                    <img class="form__personal-photo" src="img/form/form-demin-mobile.png" width="100" height="100" alt="Петя Демин.">
+                  </picture>
+                  <button class="form__personal-button" type="button"><span class="form__personal-button--delete">Сменить</span> фото</button>
+                  <div class="form__personal-block form__personal-block--hashtag">
+                    <span class="form__personal-title form__personal-title--hashtag">Тэги</span>
+                    <textarea class="form__personal-textarea" name="personal-hashtag">
+#бургер #бар #футбол #концерт
+#крафт
+                    </textarea>
+                  </div>
+                  <div class="form__personal-block form__personal-block--transport">
+                    <span class="form__personal-title form__personal-title--transport">Транспорт</span>
+                    <ul class="form__personal-list">
+                      <li class="form__personal-item">
+                        <input class="form__personal-input visually-hidden" name="personal-airplane" type="checkbox">
+                        <svg class="form__personal-icon" width="21" height="22">
+                          <use href="img/svg-icon/svg-icon.svg#transport-airplane"></use>
+                        </svg>
+                        <span class="visually-hidden">Самолет.</span>
+                      </li>
+                      <li class="form__personal-item">
+                        <input class="form__personal-input visually-hidden" name="personal-automobile" type="checkbox" checked>
+                        <svg class="form__personal-icon" width="18" height="20">
+                          <use href="img/svg-icon/svg-icon.svg#transport-automobile"></use>
+                        </svg>
+                        <span class="visually-hidden">Автомобиль.</span>
+                      </li>
+                      <li class="form__personal-item">
+                        <input class="form__personal-input visually-hidden" name="personal-bike" type="checkbox">
+                        <svg class="form__personal-icon form__personal-icon--opacity" width="24" height="24 ">
+                          <use href="img/svg-icon/svg-icon.svg#transport-bike"></use>
+                        </svg>
+                        <span class="visually-hidden">Велосипед.</span>
+                      </li>
+                      <li class="form__personal-item">
+                        <input class="form__personal-input visually-hidden" name="personal-pedestrian" type="checkbox" checked>
+                        <svg class="form__personal-icon" width="21" height="24">
+                          <use href="img/svg-icon/svg-icon.svg#transport-pedestrian"></use>
+                        </svg>
+                        <span class="visually-hidden">Пешком.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </fieldset>
+            <!-- form__personal end -->
+
+            <!-- form__plan start -->
+              <fieldset class="form__plan">
+                <div class="form__plan-container container">
+                  <legend class="form__plan-title heading-plan">Мои планы:</legend>
+                  <ol class="form__plan-list">
+                    <li class="form__plan-item">
+                      <h2 class="form__plan-subtitle">Франция, Италия</h2>
+                      <span class="form__plan-text">3 попутчика</span>
+                      <span class="form__plan-text">26 мар — 29 мар</span>
+                      <a class="form__plan-link" href="#">Изменить</a>
+                    </li>
+                    <li class="form__plan-item">
+                      <h2 class="form__plan-subtitle">Таиланд, Индонезия</h2>
+                      <span class="form__plan-text">1 попутчик</span>
+                      <span class="form__plan-text">1 июл — 15 июл</span>
+                      <a class="form__plan-link" href="#">Изменить</a>
+                    </li>
+                  </ol>
+                </div>
+              </fieldset>
+            <!-- form__plan end -->
+
+            <!-- form__add start -->
+              <fieldset class="form__add">
+                <div class="form__add-container container">
+                  <div class="form__add-block">
+                    <legend class="form__add-title heading-plan">Добавить план:</legend>
+
+                    <!-- form__add-mark start -->
+                      <ol class="form__add-mark">
+                        <li class="form__add-mark-item form__add-mark-item--current">
+                          <span class="visually-hidden">Шаг 1. Даты пребывания.</span>
+                        </li>
+                        <li class="form__add-mark-item">
+                          <span class="visually-hidden">Шаг 2. Маршрут.</span>
+                        </li>
+                        <li class="form__add-mark-item">
+                          <span class="visually-hidden">Шаг 3. Развлечения.</span>
+                        </li>
+                      </ol>
+                    <!-- form__add-mark end -->
+
+                  </div>
+                  <ol class="form__add-list">
+                    <li class="form__add-item">
+                      <span class="form__add-subtitle">Шаг 1. Даты пребывания</span>
+                      <p class="form__add-text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+
+                      <!-- form__add-control start -->
+                        <div class="form__add-control">
+                          <p class="form__add-control-block">
+                            <label class="form__add-control-text form__add-control-text--name">Ищу попутчиков:</label>
+                            <span class="form__add-control-text form__add-control-text--unit">Чел.</span>
+                          </p>
+                          <div class="form__add-control-buttons">
+                            <button class="form__add-control-button" type="button">
+                              <!-- SVG - minus -->
+                              <span class="visually-hidden">Уменьшить на 1</span>
+                            </button>
+                            <input class="form__add-control-number" name="control-companion" type="number" value="2">
+                            <button class="form__add-control-button" type="button">
+                              <!-- SVG - plus -->
+                              <span class="visually-hidden">Увеличить на 1</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="form__add-control">
+                          <p class="form__add-control-block">
+                            <label class="form__add-control-text form__add-control-text--name">Длительность:</label>
+                            <span class="form__add-control-text form__add-control-text--unit">Дн.</span>
+                          </p>
+                          <div class="form__add-control-buttons">
+                            <button class="form__add-control-button" type="button">
+                              <!-- SVG - minus -->
+                              <span class="visually-hidden">Уменьшить на 1</span>
+                            </button>
+                            <input class="form__add-control-number" name="control-duration" type="number" value="2">
+                            <button class="form__add-control-button" type="button">
+                              <!-- SVG - plus -->
+                              <span class="visually-hidden">Увеличить на 1</span>
+                            </button>
+                          </div>
+                        </div>
+                      <!-- form__add-control end -->
+
+                      <!-- form__add-children start -->
+                        <div class="form__add-children">
+                          <input class="visually-hidden" name="add-children" type="checkbox" checked>
+                          <span class="form__add-children-text">Можно с детьми</span>
+                        </div>
+                      <!-- form__add-children end -->
+
+                      <!-- form__add-calendar start -->
+                        <div class="form__add-calendar">
+
+                          <!-- form__add-month start -->
+                            <div class="form__add-month">
+                              <button class="form__add-month-button form__add-month-button--prev" type="button">
+                                <!-- SVG - prev -->
+                                <span class="visually-hidden">Предыдущий месяц</span>
+                              </button>
+                              <span class="form__add-month-text">Март 2022</span>
+                              <button class="form__add-month-button form__add-month-button--next" type="button">
+                                <!-- SVG - prev -->
+                                <span class="visually-hidden">Следующий месяц</span>
+                              </button>
+                            </div>
+                          <!-- form__add-month end -->
+
+                          <ul class="form__add-calendar-list">
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--name" type="button">П</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--name" type="button">В</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--name" type="button">С</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--name" type="button">Ч</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--name" type="button">П</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--name" type="button">С</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--name" type="button">В</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">23</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">24</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">25</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">26</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">27</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">28</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">1</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">2</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">3</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">4</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">5</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">6</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">7</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">8</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">9</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">10</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">11</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">12</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">13</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">14</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">15</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">16</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">17</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">18</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">19</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">20</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">21</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">22</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">23</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">24</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--disabled" type="button">25</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--trip" type="button">26</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--trip" type="button">27</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day form__add-calendar-day--trip" type="button">28</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day" type="button">29</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day" type="button">30</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day" type="button">31</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day" type="button">1</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day" type="button">2</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day" type="button">3</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day" type="button">4</button>
+                            </li>
+                            <li class="form__add-calendar-item">
+                              <button class="form__add-calendar-day" type="button">5</button>
+                            </li>
+                          </ul>
+                        </div>
+                      <!-- form__add-calendar end -->
+
+                      <a class="form__add-button" href="#">Следующий шаг</a>
+                    </li>
+                    <li class="form__add-item">
+                      <span class="form__add-subtitle">Шаг 2. Маршрут</span>
+                      <p class="form__add-text">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+
+                      <!-- form__add-route start -->
+                        <div class="form__add-route">
+                          <button class="form__add-route-button" type="button">
+                            <span class="visually-hidden">Выберите страну.</span>
+                          </button>
+                          <img class="form__add-route-img" src="img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг Боснии и Герцеговины.">
+                          <button class="form__add-route-delete" type="button">
+                            <!-- SVG - delete -->
+                            <span class="visually-hidden">Убрать выбранную страну.</span>
+                          </button>
+                          <!-- SVG - arrow -->
+                        </div>
+                      <!-- form__add-route start -->
+
+                      <!-- form__add-route start -->
+                        <div class="form__add-route">
+                          <button class="form__add-route-button" type="button">
+                            <span class="visually-hidden">Выберите страну.</span>
+                          </button>
+                          <img class="form__add-route-img" src="img/flag-czech.png" width="35" height="24" alt="Флаг Чехии.">
+                          <button class="form__add-route-delete" type="button">
+                            <!-- SVG - delete -->
+                            <span class="visually-hidden">Убрать выбранную страну.</span>
+                          </button>
+                          <!-- SVG - arrow -->
+                        </div>
+                      <!-- form__add-route start -->
+
+                      <!-- form__add-route start -->
+                        <div class="form__add-route">
+                          <button class="form__add-route-button form__add-route-button--list" type="button">
+                            <span class="visually-hidden">Выберите страну.</span>
+                          </button>
+                          <!-- SVG - arrow -->
+
+                          <!-- form__add-letters start -->
+                            <ul class="form__add-letters">
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">А</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Австралия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Австрия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Азербайджан</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Албания</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Алжир</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Ангола</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Андорра</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Антигуа и Барбуда</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Аргентина</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Армения</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Афганистан</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Б</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Багамские Острова</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Бангладеш</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Барбадос</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Бахрейн</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Белоруссия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Белиз</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Бельгия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Бенин</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Болгария</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Боливия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Босния и Герцеговина</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Ботсвана</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Бразилия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Бруней</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Буркина-Фасо</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Бурунди</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Бутан</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">В</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Вануату</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Великобритания</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Венгрия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Венесуэла</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Восточный Тимор</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Вьетнам</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Г</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Габон</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Гаити</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Гайана</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Гамбия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Гана</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Гватемала</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Гвинея</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Гвинея-Бисау</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Германия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Гондурас</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Гренада</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Греция</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Грузия</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Д</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Дания</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Джибути</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Доминика</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Доминикана</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Е</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Египет</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">З</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Замбия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Зимбабве</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">И</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Израиль</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Индия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Индонезия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Иордания</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Ирак</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Иран</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Ирландия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Исландия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Испания</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Италия</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">К</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Кабо-Верде</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Казахстан</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Камбоджа</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Камерун</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Канада</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Катар</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Кения</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Кипр</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Киргизия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Кирибати</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Китай</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Колумбия</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Л</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Лаос</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Латвия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Лесото</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Либерия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Ливан</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Ливия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Литва</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Лихтенштейн</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Люксембург</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">М</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Маврикий</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Мавритания</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Мадагаскар</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Малави</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Малайзия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Мали</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Мальдивы</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Мальта</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Марокко</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Н</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Намибия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Науру</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Непал</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Нигер</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Нигерия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Нидерланды</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Никарагуа</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Новая Зеландия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Норвегия</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">О</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">ОАЭ</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Оман</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">П</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Пакистан</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Палау</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Панама</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Папуа - Новая Гвинея</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Парагвай</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Перу</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Польша</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Португалия</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Р</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Руанда</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Румыния</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Россия</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">С</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Сальвадор</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Самоа</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Сан-Марино</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Саудовская Аравия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Сейшелыр</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Сенегал</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Сербия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Сингапур</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Сирия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Словакия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Словения</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">США</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Т</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Таджикистан</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Таиланд</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Танзания</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Того</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Тонга</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Тринидад и Тобаго</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Тувалу</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Тунис</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Туркмения</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Турция</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">У</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Уганда</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Узбекистан</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Украина</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Уругвай</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Ф</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Фиджи</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Филиппины</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Финляндия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Франция</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Х</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Хорватия</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Ч</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Чад</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Черногория</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Чехия</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Чили</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Ш</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Швейцария</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Швеция</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Шри-Ланка</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Э</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Эквадор</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Эритрея</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Эсватини</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Эстония</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Эфиопия</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Ю</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">ЮАР</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Южный Судан</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                              <li class="form__add-letter-item">
+                                <button class="form__add-letter" type="button">Я</button>
+
+                                <!-- form__add-country start -->
+                                  <ul class="form__add-country">
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Ямайка</a>
+                                    </li>
+                                    <li class="form__add-country-item">
+                                      <a class="form__add-country-link" href="#">Япония</a>
+                                    </li>
+                                  </ul>
+                                <!-- form__add-country end -->
+
+                              </li>
+                            </ul>
+                          <!-- form__add-letters end -->
+
+                        </div>
+                      <!-- form__add-route start -->
+
+                      <!-- form__add-route start -->
+                        <div class="form__add-route">
+                          <button class="form__add-route-button form__add-route-button--append" type="button">
+                            <span class="visually-hidden">Добавить страну.</span>
+                          </button>
+                        </div>
+                      <!-- form__add-route start -->
+
+                      <a class="form__add-button" href="#">Следующий шаг</a>
+                      <a class="form__add-button form__add-button--back" href="#">На шаг назад</a>
+                    </li>
+                    <li class="form__add-item">
+                      <span class="form__add-subtitle">Шаг 3. Развлечения</span>
+                      <p class="form__add-text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+
+                      <!-- form__add-entertainment start -->
+                        <ul class="form__add-entertainment">
+                          <li class="form__add-entertainment-item">
+                            <label class="form__add-entertainment-label" for="entertainment-plan-1">Босния и Герцеговина</label>
+                            <img class="form__add-entertainment-flag" src="img/flag-bosnia-and-herzegovina.png" width="35" height="24" alt="Флаг Боснии и Герцеговины.">
+                            <textarea class="form__add-entertainment-textarea" name="entertainment-plan-1" id="entertainment-plan-1" placeholder="План действий"></textarea>
+                          </li>
+                          <li class="form__add-entertainment-item">
+                            <label class="form__add-entertainment-label" for="entertainment-plan-2">Чехия</label>
+                            <img class="form__add-entertainment-flag" src="img/flag-czech.png" width="35" height="24" alt="Флаг Чехии.">
+                            <textarea class="form__add-entertainment-textarea" name="entertainment-plan-2" id="entertainment-plan-2" placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все."></textarea>
+                          </li>
+                        </ul>
+                      <!-- form__add-entertainment end -->
+
+                      <button class="form__add-button" type="submit">Отправить</button>
+                      <a class="form__add-button form__add-button--back" href="#">На шаг назад</a>
+
+                    </li>
+                  </ol>
+                </div>
+              </fieldset>
+            <!-- form__add end-->
+
+          </form>
+        <!-- form end -->
+
+      </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+      <footer class="footer">
+
+        <!-- logo start -->
+          <a class="footer__logo logo">
+            <!-- SVG - logo -->
+            <span class="visually-hidden">Логотип интернет-сервиса 'Погнали'.</span>
+          </a>
+        <!-- logo end -->
+
+        <!-- social start -->
+          <ul class="footer__social social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <!-- SVG - icon-telegram -->
+                <span class="visually-hidden">Телеграм.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <!-- SVG - icon-vkontakte -->
+                <span class="visually-hidden">Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <!-- SVG - icon-youtube -->
+                <span class="visually-hidden">Youtube.</span>
+              </a>
+            </li>
+          </ul>
+        <!-- social end -->
+
+        <a class="footer__developed" href="https://htmlacademy.ru/profession/frontender">
+          <span class="footer__developed-text">Разработано</span>
+          <img class="footer__developed-logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML-Academy">
+        </a>
+      </footer>
+    <!-- footer end -->
+
+    <script src="js/script.js"></script>
+  </body>
+
+</html>

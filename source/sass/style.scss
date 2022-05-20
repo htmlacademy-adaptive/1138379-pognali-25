@@ -11,6 +11,7 @@
 @import "global-block/button.scss";
 @import "global-block/contacts.scss";
 @import "global-block/description.scss";
+@import "global-block/heading-plan.scss";
 @import "global-block/logo.scss";
 @import "global-block/progress.scss";
 @import "global-block/social.scss";
@@ -32,4 +33,7 @@
 @import "block/home-page/route-address.scss";
 @import "block/home-page/map.scss";
 @import "block/home-page/tariffs-modal";
+
+// form
+@import "block/form/form.scss";
 

@@ -2,7 +2,7 @@
   background-color: #192144;
   background-image: url("../img/companions/companion-rectangle.svg"), url("../img/companions/companion-rogovaya-mobile.png"), url("../img/companions/companion-smolov-mobile.png");
   background-repeat: no-repeat;
-  background-position: calc(50% - 104px) 62px, calc(50% - 128px) 337px, calc(50% - -63px) 65px;
+  background-position: left 62px, left 337px, calc(50% - -63px) 65px;
   background-size: 113px 132px, 64px 71px, 143px 143px;
   z-index: $z-index-companions;
 
@@ -47,6 +47,10 @@
 
 .companions__item {
   position: relative;
+}
+
+.companions__link {
+  display: block;
 }
 
 .companions__photo {
@@ -156,7 +160,7 @@
 
 @media (min-width: $tablet-width) {
   .companions {
-    background-image: url("../img/companions/companion-rectangle.svg"), url("../img/companions/companion-rogovaya-tablet.png"), url("../img/companions/companion-smolov-tablet.png");
+    background-image: url("../img/companions/companion-rectangle-tablet.svg"), url("../img/companions/companion-rogovaya-tablet.png"), url("../img/companions/companion-smolov-tablet.png");
     background-repeat: no-repeat;
     background-position: calc(50% - 237px) 128px, calc(50% - -168px) 140px, calc(50% - 272px) 486px;
     background-size: 212px 212px, 285px 285px, 143px 143px;
@@ -289,7 +293,7 @@
 
   .companions__list {
     grid-area: list;
-    margin: 8px 30px 8px;
+    margin: 10px 29px 8px;
     margin-right: 0;
     gap: 60px;
   }

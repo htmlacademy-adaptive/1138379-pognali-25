@@ -1,9 +1,5 @@
 .logo {
   color: var(--basic-white);
-
-  &--dark {
-    color: var(--basic-black);
-  }
 }
 
 .logo__image {
@@ -12,10 +8,6 @@
   }
 
   &--tablet {
-    display: none;
-  }
-
-  &--desktop {
     display: none;
   }
 }
@@ -29,25 +21,14 @@
     &--tablet {
       display: block;
     }
-
-    &--desktop {
-      display: none;
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .logo__image {
-    &--mobile {
-      display: none;
-    }
-
     &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
+      width: 200px;
+      height: 50px;
     }
   }
 }

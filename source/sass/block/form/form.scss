@@ -1,0 +1,522 @@
+// form__personal start
+.form__personal {
+  padding: 0;
+  border: 0;
+}
+
+.form__personal-container {
+  padding-top: 20px;
+  padding-bottom: 32px;
+  display: grid;
+  grid-template-areas: "progress photo"
+    "button button"
+    "hashtag hashtag"
+    "transport transport";
+}
+
+.form__personal-progress {
+  grid-area: progress;
+  justify-self: center;
+}
+
+.form__personal-circle {
+  display: none;
+
+  &--mobile {
+    display: block;
+  }
+}
+
+.form__personal-picture {
+  grid-area: photo;
+  justify-self: center;
+  display: block;
+}
+
+.form__personal-photo {
+  display: block;
+}
+
+.form__personal-button {
+  grid-area: button;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-blue);
+  padding: 10px;
+  border: 0;
+  background-color: #dfe3f0;
+  border-radius: 20px;
+  min-height: 40px;
+  width: 270px;
+  margin-top: 16px;
+  margin-bottom: 34px;
+}
+
+.form__personal-block {
+  position: relative;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+
+  &--hashtag {
+    grid-area: hashtag;
+    width: 270px;
+    min-height: 90px;
+    margin-bottom: 23px;
+  }
+
+  &--transport {
+    grid-area: transport;
+    width: 270px;
+    min-height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form__personal-title {
+  position: absolute;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-blue-light);
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 0 14px;
+  background-color: #edeff6;
+}
+
+.form__personal-textarea {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  resize: none;
+  border: 0;
+  padding: 23px;
+  background-color: transparent;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special-grey);
+  opacity: 0.6;
+}
+
+.form__personal-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.form__personal-item {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--basic-white);
+  display: flex;
+}
+
+.form__personal-icon {
+  margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .form__personal-container {
+    padding-top: 67px;
+    padding-bottom: 34px;
+    grid-template-areas: "progress transport photo"
+      "button button button"
+      "hashtag hashtag hashtag";
+  }
+
+  .form__personal-circle {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  .form__personal-photo {
+    width: 94px;
+    height: 94px;
+  }
+
+  .form__personal-block {
+    &--transport {
+      width: 308px;
+      min-height: 95px;
+      justify-self: center;
+    }
+
+    &--hashtag {
+      width: 618px;
+      height: 95px;
+      justify-self: center;
+    }
+  }
+
+  .form__personal-title {
+    font-size: 20px;
+    height: 20px;
+    letter-spacing: 0.08em;
+    top: 84px;
+  }
+
+  .form__personal-item {
+    width: 43px;
+    height: 43px;
+  }
+
+  .form__personal-button {
+    width: 618px;
+    justify-self: center;
+    min-height: 60px;
+    border-radius: 10px;
+    letter-spacing: 0.09em;
+    margin-top: 50px;
+    margin-bottom: 52px;
+  }
+
+  .form__personal-textarea {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 10px 38px;
+    padding-top: 32px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__personal-container {
+    padding-top: 0;
+    padding-bottom: 42px;
+    margin-top: -190px;
+    grid-template-columns: 1fr 95px 285px;
+    grid-template-areas: "progress progress photo"
+      ". . button"
+      "hashtag transport transport";
+  }
+
+  .form__personal-progress {
+    justify-self: end;
+    margin-top: 45px;
+    margin-right: 43px;
+  }
+
+  .form__personal-picture {
+    justify-self: start;
+  }
+
+  .form__personal-photo {
+    width: 190px;
+    height: 190px;
+  }
+
+  .form__personal-button {
+    margin: 0;
+    margin-bottom: 28px;
+    min-height: 47px;
+    width: 190px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    justify-self: start;
+    letter-spacing: normal;
+  }
+
+  .form__personal-button-delete {
+    display: none;
+  }
+
+  .form__personal-block {
+    &--hashtag {
+      width: 732px;
+      justify-self: start;
+      margin-left: 64px;
+    }
+
+    &--transport {
+      width: 384px;
+      height: 94px;
+    }
+  }
+
+  .form__personal-title {
+    padding: 0 18px;
+
+    &--hashtag {
+      left: 62px;
+    }
+  }
+}
+
+// .form__personal end
+
+// form__plan start
+.form__plan {
+  background-color: #dfe3f0;
+  border: 0;
+  padding: 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.form__plan-container {
+  padding-top: 27px;
+  padding-bottom: 32px;
+}
+
+.form__plan-title {
+  margin-bottom: 34px;
+}
+
+.form__plan-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  gap: 10px;
+  counter-reset: form__plan-list;
+}
+
+.form__plan-item {
+  width: 270px;
+  min-height: 154px;
+  background-color: var(--basic-white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-left: 26px;
+  padding-top: 22px;
+  position: relative;
+
+  &::before {
+    content: counter(form__plan-list) ". ";
+    counter-increment: form__plan-list;
+    position: absolute;
+    top: 22px;
+    left: 24px;
+    font-family: "Blogger Sans", "Arial", sans-serif;
+    color: var(--basic-blue-light);
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+}
+
+.form__plan-subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--basic-blue-light);
+  margin: 0;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.form__plan-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--basic-blue-light);
+
+  &--companions {
+    margin-bottom: 5px;
+  }
+
+  &--dates {
+    margin-bottom: 24px;
+  }
+}
+
+.form__plan-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  color: var(--basic-black);
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form__plan-container {
+    padding-top: 55px;
+    padding-bottom: 77px;
+  }
+
+  .form__plan-title {
+    margin: 0 34px 52px;
+  }
+
+  .form__plan-list {
+    margin: 0 34px;
+  }
+
+  .form__plan-item {
+    padding-top: 36px;
+    padding-left: 41px;
+    padding-bottom: 16px;
+    padding-right: 37px;
+    width: 618px;
+    min-height: 152px;
+    display: grid;
+    grid-template-columns: 1fr 210px 1fr;
+    grid-template-areas: "subtitle subtitle subtitle"
+      "companions dates link";
+
+    &::before {
+      font-size: 20px;
+      line-height: 20px;
+      left: auto;
+      top: 40px;
+      right: 33px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      top: 96px;
+      left: 0;
+      height: 1px;
+      background-color: #cbced9;
+    }
+  }
+
+  .form__plan-subtitle {
+    grid-area: subtitle;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 55px;
+    margin-left: 0;
+  }
+
+  .form__plan-text {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+
+    &--companions {
+      grid-area: companions;
+    }
+
+    &--dates {
+      grid-area: dates;
+      justify-self: center;
+    }
+  }
+
+  .form__plan-link {
+    grid-area: link;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    justify-self: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__plan-container {
+    padding-top: 50px;
+    padding-bottom: 64px;
+  }
+
+  .form__plan-title {
+    margin: 0 70px 53px;
+  }
+
+  .form__plan-list {
+    margin: 0 63px;
+    gap: 15px;
+  }
+
+  .form__plan-item {
+    padding: 10px;
+    padding-top: 35px;
+    padding-left: 96px;
+    width: 1258px;
+    min-height: 97px;
+    grid-template-columns: 1fr 177px 304px 140px;
+    grid-template-areas: "subtitle companions dates link";
+
+    &::before {
+      top: 36px;
+      left: 44px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__plan-subtitle {
+    margin-bottom: 0;
+  }
+
+  .form__plan-text {
+    &--dates {
+      justify-self: start;
+    }
+  }
+
+  .form__plan-link {
+    justify-self: start;
+  }
+}
+// form__plan end
+
+// form__add start
+.form__add {
+  padding: 0;
+  border: 0;
+}
+
+.form__add-container {
+  padding-top: 25px;
+}
+
+.form__add-block {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+  margin-bottom: 29px;
+}
+
+// form__add-mark start
+.form__add-mark {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__add-mark-item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+  }
+}
+// form__add-mark end
+
+// form__add end

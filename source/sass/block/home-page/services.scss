@@ -2,10 +2,9 @@
   background-color: #192144;
   background-image: url("../img/services/services-about-mobile.png"), url("../img/services/services-rectangle-mobile.svg");
   background-repeat: no-repeat;
-  background-position: calc(50% + 4px) 0, calc(50% - 104px) 0;
+  background-position: calc(50% + 4px) 0, left 0;
   background-size: 292px 353px, 113px 132px;
   position: relative;
-
   z-index: $z-index-services;
   border-radius: 0 0 $border-radius-mobile $border-radius-mobile;
 }
